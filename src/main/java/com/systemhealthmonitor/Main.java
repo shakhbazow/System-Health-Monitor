@@ -21,5 +21,23 @@ public class Main extends Application {
             primaryStage.setTitle("System Health Monitor");
             primaryStage.setWidth(1000);
             primaryStage.setHeight(700);
+
+            primaryStage.show();
+
+            logger.info("App launched successfully");
+        } catch (Exception e) {
+            logger.error("Failed to start application", e);
+            throw new RuntimeException("App starup failed", e);
+        }
     }
-}
+
+        @Override
+        public void stop() {
+            logger.info("APP shutting down");
+
+        }
+
+
+    }
+
+
