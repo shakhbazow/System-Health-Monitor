@@ -128,7 +128,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>com.systemhealthmonitor.Main</mainClass>
+                    <mainClass>com.systemhealthmonitor.Launcher</mainClass>
                 </configuration>
             </plugin>
 
@@ -140,7 +140,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.systemhealthmonitor.Main</mainClass>
+                            <mainClass>com.systemhealthmonitor.Launcher</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -160,7 +160,7 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>com.systemhealthmonitor.Main</mainClass>
+                                    <mainClass>com.systemhealthmonitor.Launcher</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>
