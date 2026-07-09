@@ -17,6 +17,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         try {
             logger.info("Initializing primary stage");
+            // db start
+            DatabaseManager.getInstance().initialize();
 
             primaryStage.setTitle("System Health Monitor");
             primaryStage.setWidth(1000);
@@ -34,6 +36,8 @@ public class Main extends Application {
         @Override
         public void stop() {
             logger.info("APP shutting down");
+            DatabaseManager.getInstance().close();
+
 
         }
 
