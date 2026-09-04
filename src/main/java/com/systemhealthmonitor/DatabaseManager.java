@@ -80,7 +80,7 @@ public class DatabaseManager {
                             "    id              INTEGER PRIMARY KEY AUTOINCREMENT," +
                             "    session_id      INTEGER NOT NULL REFERENCES scan_sessions(id)," +
                             "    model           TEXT," +
-                            "    core_count      INTEGER," +s
+                            "    core_count      INTEGER," +
                             "    usage_percent   REAL" +
                             ")"
             );
